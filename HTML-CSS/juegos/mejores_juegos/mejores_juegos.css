@@ -1,0 +1,234 @@
+
+body{
+    margin: 0;
+
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 200,
+    'opsz' 48,
+    }
+    
+    .header{
+        width: 100%;
+        height: auto;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0px;
+    }
+    .header img{
+        width: 200px;
+        margin: 0;
+    }
+    
+    .logo{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3% 15px 3% 0;
+    }
+    .logo p{
+        font-size: 4.5em;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: black;
+        margin: 0;
+        padding-left: 0;
+    }
+    .texto-logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo .barra{
+        font-size: 5em;
+    }
+    
+    #menu{
+        width: 60%;
+        margin: 30px 0 0 30px;
+        height: 350px;
+        display: flex;
+        justify-content: flex-start ;
+        align-items: flex-start;
+        gap: 1px;
+    }
+    .boton-home{
+        padding: 15px;
+        color: white;
+        background-color:rgb(14, 117, 165);
+        font-family: 'Zen Dots', cursive;
+        border: none;
+        display: flex;
+        justify-content: center;
+        max-width: fit-content;
+    }
+    .boton-home:hover{
+        background-color: rgba(9, 28, 134, 0.9);
+    }
+    .material-icons{
+        align-self: center;
+        font-size: 40px;
+    }
+    .container_menu{
+        max-width: 20%;
+        width: 15%;
+        height: auto;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container_sub-apartado_menu{
+        width: 100%;
+        height: auto;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .apartado-principal_menu{
+        border-radius: 0;
+        border: none;
+        background-color: rgb(14, 117, 165);
+        width: 100%;
+        font-size: 1.25rem;
+        padding: 15px 10%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+    
+    .sub-apartado_menu{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 25px 12.5%;
+        background-color: lightgray;
+        width: 75%;
+        text-align: center;
+    }
+    
+    
+    @media (hover:hover){
+        .apartado-principal_menu:hover{
+            background-color: rgba(9, 28, 134, 0.9);
+            cursor: pointer;
+        }
+        .sub-apartado_menu:hover{
+            background-color: lightslategrey;
+            cursor: pointer;
+        }
+        .container_menu:hover .container_sub-apartado_menu{
+            display: flex;
+        }
+    }
+    @media (max-width: 1925px) {
+        #peliculas_container{
+            min-width: 230px;
+        }
+    }
+
+html{
+    padding: 0;
+    margin: 0;
+}
+main{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100%;
+    
+}
+section a{
+    width: 100%;
+    height: 100%;
+}
+section{
+    width: 33.3%;
+    height: auto;
+    aspect-ratio: 3/1.6;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    background-size:cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+}
+
+@media(hover:hover){
+    section:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+.gow_ragnarok{background-image: url(/media/juegos/mejores_juegos/gow_ragnarok.png);}
+.gta_san_andreas{background-image: url(/media/juegos/mejores_juegos/gta_san_andreas.png);}
+.cod_bo2{background-image:url(/media/juegos/mejores_juegos/cod_bo2.png);}
+.skyrim{background-image:url(/media/juegos/mejores_juegos/skyrim.png);}
+.dark_souls_iii{background-image:url(/media/juegos/mejores_juegos/dark_souls_iii.png);}
+.last_of_us{background-image:url(/media/juegos/mejores_juegos/last_of_us.png);}
+.breath_of_the_wild{background-image:url(/media/juegos/mejores_juegos/breath_of_the_wild.png);}
+.final_fantasy_vii{background-image:url(/media/juegos/mejores_juegos/final_fantasy_vii.png);}
+.resident_evil_vii{background-image: url(/media/juegos/mejores_juegos/resident_evil_vii.png);}
+
+
+footer nav a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+footer nav a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 1) ;
+    border-top: 5px solid white;
+    padding: 50px;
+}
+#youtube, #twitter{
+    width: 75px;
+    height: 75px;
+}
+#facebook, #instagram{
+    width: 50px;
+    height: 50px;
+    padding: 12.5px;
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 50px;
+}
+.extra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 0 50px;
+    width: 30%;
+    height: auto;
+    margin-top: 25px;
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    gap: 15px;
+}

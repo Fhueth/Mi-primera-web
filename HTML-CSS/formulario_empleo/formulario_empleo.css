@@ -1,0 +1,88 @@
+body{
+    background-image: url(../../media/formulario/fondo_formulario.png);
+    margin: 0;
+    height: 100%;
+}
+
+.body{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+h1{
+    font-size: 5em;
+    font-family: 'Courier New', Courier, monospace;
+    width: auto;
+    color: whitesmoke;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+header, main{
+    width: 100%;
+    text-align: center;
+}
+.info1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+.info2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+.info2 div{
+    margin: auto;
+}
+.info div{
+    width: auto;
+}
+.info1 input{
+    padding: 25px;
+}
+input, textarea{
+    width: auto;
+    font-size: 2em;
+    margin: 25px;
+}
+.titulo{
+    width: auto;
+    margin: auto;
+}
+.textarea_unirte, .textarea_experiencia{
+    width: 750px;
+    height: 200px;
+}
+.enviar{
+    width: 75%;
+    padding: 40px;
+    background-color: blueviolet;
+    color: whitesmoke;
+    border: 5%;
+    border-color: blue;
+    border-radius: 10px;
+    margin-top: 53px;
+    font-size: 4em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.enviar:hover{
+    cursor: pointer;
+    background-color: purple;
+
+}

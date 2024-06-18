@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+    height: auto;
+    width: auto;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 200,
+    'opsz' 48,
+    }
+    
+    .header{
+        width: 100%;
+        height: auto;
+        background-color: black;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0px;
+        border-bottom: 10px solid white;
+    }
+    .header img{
+        width: 200px;
+        margin: 0;
+    }
+    
+    .logo{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3% 15px 3% 0;
+    }
+    .logo p{
+        font-size: 4.5em;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: white;
+        margin: 0;
+        padding-left: 0;
+    }
+    .texto-logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo .barra{
+        font-size: 5em;
+    }
+    
+    #menu{
+        width: 60%;
+        margin: 30px 0 0 30px;
+        height: 300px;
+        display: flex;
+        justify-content: flex-start ;
+        align-items: flex-start;
+        gap: 1px;
+    }
+    .boton-home{
+        padding: 15px;
+        color: black;
+        background-color:white;
+        font-family: 'Zen Dots', cursive;
+        border: none;
+        display: flex;
+        justify-content: center;
+        max-width: fit-content;
+    }
+    .boton-home:hover{
+        background-color: rgba(1, 1, 1, 0.9);
+    }
+    .material-icons{
+        align-self: center;
+        font-size: 40px;
+    }
+    .container_menu{
+        max-width: 20%;
+        width: 15%;
+        height: auto;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container_sub-apartado_menu{
+        width: 100%;
+        height: auto;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .apartado-principal_menu{
+        border-radius: 0;
+        border: none;
+        background-color: white;
+        width: 100%;
+        font-size: 1.25rem;
+        padding: 15px 10%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+    }
+    
+    .sub-apartado_menu{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 25px 12.5%;
+        background-color: white;
+        width: 75%;
+        text-align: center;
+    }
+    
+    
+    @media (hover:hover){
+        .apartado-principal_menu:hover{
+            background-color: rgba(232, 232, 232, 0.9);
+            cursor: pointer;
+        }
+        .sub-apartado_menu:hover{
+            background-color: rgba(232, 232, 232, 0.9);
+            cursor: pointer;
+        }
+        .container_menu:hover .container_sub-apartado_menu{
+            display: flex;
+        }
+    }
+
+
+main{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+main h1{
+    display: none;
+}
+
+
+section{
+    width: 33.3%;
+    height: auto;
+    aspect-ratio: 1/1.5;
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-size: cover;
+    background-position: center center;
+}
+
+.breaking_bad{background-image: url(../../media/series/breaking_bad.png);}
+.juego_de_tronos{background-image: url(../../media/series/juego_de_tronos.png);}
+.the_wire{background-image:url(../../media/series/the_wire.png);}
+.soprano{background-image:url(../../media/series/soprano.png);}
+.hermanos_de_sangre{background-image:url(../../media/series/hermanos_de_sangre.png);}
+.peaky_blinders{background-image:url(../../media/series/peaky_blinders.png);}
+.true_detective{background-image:url(../../media/series/true_detective.png);}
+.chernobyl{background-image:url(../../media/series/chernobyl.png);}
+.black_mirror{background-image:url(../../media/series/black_mirror.png);}
+
+.container button{
+    visibility: hidden;
+    position: absolute;
+    font-size: 5em;
+    align-self: center;
+}
+form{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+@media (hover:hover){
+    section:hover{
+        opacity: 1;
+        cursor: pointer;     
+}
+}
+
+
+footer nav a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+footer nav a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 1) ;
+    border-top: 5px solid white;
+    padding: 50px;
+}
+#youtube, #twitter{
+    width: 75px;
+    height: 75px;
+}
+#facebook, #instagram{
+    width: 50px;
+    height: 50px;
+    padding: 12.5px;
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 50px;
+}
+.extra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 0 50px;
+    width: 30%;
+    height: auto;
+    margin-top: 25px;
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    gap: 15px;
+}

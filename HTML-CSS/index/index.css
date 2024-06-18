@@ -1,0 +1,324 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 200,
+    'opsz' 48,
+    }
+    
+    .header{
+        width: 100%;
+        height: auto;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0px;
+    }
+    .header img{
+        width: 200px;
+        margin: 0;
+    }
+    
+    .logo{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3% 15px 3% 0;
+    }
+    .logo p{
+        font-size: 4.5em;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: black;
+        margin: 0;
+        padding-left: 0;
+    }
+    .texto-logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo .barra{
+        font-size: 5em;
+    }
+    
+    #menu{
+        width: 60%;
+        margin: 30px 0 0 30px;
+        height: 350px;
+        display: flex;
+        justify-content: flex-start ;
+        align-items: flex-start;
+        gap: 1px;
+    }
+    .boton-home{
+        padding: 15px;
+        color: white;
+        background-color:rgb(14, 117, 165);
+        font-family: 'Zen Dots', cursive;
+        border: none;
+        display: flex;
+        justify-content: center;
+        max-width: fit-content;
+    }
+    .boton-home:hover{
+        background-color: rgba(9, 28, 134, 0.9);
+    }
+    .material-icons{
+        align-self: center;
+        font-size: 40px;
+    }
+    .container_menu{
+        max-width: 20%;
+        width: 15%;
+        height: auto;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container_sub-apartado_menu{
+        width: 100%;
+        height: auto;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .apartado-principal_menu{
+        border-radius: 0;
+        border: none;
+        background-color: rgb(14, 117, 165);
+        width: 100%;
+        font-size: 1.25rem;
+        padding: 15px 10%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+    
+    .sub-apartado_menu{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 25px 12.5%;
+        background-color: lightgray;
+        width: 75%;
+        text-align: center;
+    }
+    
+    
+    @media (hover:hover){
+        .apartado-principal_menu:hover{
+            background-color: rgba(9, 28, 134, 0.9);
+            cursor: pointer;
+        }
+        .sub-apartado_menu:hover{
+            background-color: lightslategrey;
+            cursor: pointer;
+        }
+        .container_menu:hover .container_sub-apartado_menu{
+            display: flex;
+        }
+    }
+    @media (max-width: 1925px) {
+        #peliculas_container{
+            min-width: 230px;
+        }
+    }
+
+.quienes_somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../../media/index/cine.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 750px;
+}
+.quienes_somos h1{
+    text-align: center;
+    font-size: 8em;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    color:whitesmoke;
+    padding: 0;
+}
+.quienes_somos p{
+    text-align: justify;
+    font-size: 2em;
+    color: whitesmoke;
+    padding: 0 0;
+    width: 1000px;
+    margin: 0;
+}
+
+.trofeo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    height: auto;
+}
+.trofeo img{
+ width: 750px;   
+}
+.características{
+    width: auto;
+    height: 50vh;
+    padding: 150px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    background-color: whitesmoke;
+}
+.características li{
+    list-style: none;
+}
+
+.apuntate div{
+    margin: 0;
+}
+.apuntate{
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../../media/index/mando.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.apuntate-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    height: auto;
+}
+.apuntate-texto p{
+    text-align: justify;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.apuntate-texto h1{
+    font-size: 7em;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding-bottom: 5%;
+}
+.apuntate button{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 6em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 10px red;
+    color: white;
+    background-color: red;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+.apuntate button:hover{
+    font-size: 4e;
+    box-shadow: 2px 2px 10px royalblue;
+    color: white;
+    background-color: royalblue;
+    padding: 15px 40px;
+}
+
+
+
+
+
+
+
+footer nav a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+footer nav a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 1) ;
+    border-top: 5px solid white;
+    padding: 50px;
+}
+#youtube, #twitter{
+    width: 75px;
+    height: 75px;
+}
+#facebook, #instagram{
+    width: 50px;
+    height: 50px;
+    padding: 12.5px;
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 50px;
+}
+.extra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 0 50px;
+    width: 30%;
+    height: auto;
+    margin-top: 25px;
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    gap: 15px;
+}
